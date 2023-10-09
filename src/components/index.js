@@ -1,0 +1,6 @@
+export { default as Footer } from './Footer/Footer'
+export { default as Header } from './Header/Header'
+export { default as Hero } from './Hero/Hero'
+export { default as Projects } from './Projects/Project'
+export { default as Technologies } from './Technologies/Technology'
+export { default as Testimonials } from './Testimonials/Testimonial'

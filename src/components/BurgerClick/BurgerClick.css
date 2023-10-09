@@ -1,0 +1,16 @@
+
+
+.main-burger {
+    /* background-color: var(--navy-blue);
+    color: var(--white-color); */
+    /* max-width: 100%; */
+    /* min-height: 100vh; */
+}
+
+main {
+    background-color: var(--navy-blue);
+    color: var(--white-color);
+    min-width: 120vw;
+    min-height: 500vh;
+
+}

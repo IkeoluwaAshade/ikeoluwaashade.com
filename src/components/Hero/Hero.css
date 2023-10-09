@@ -1,0 +1,42 @@
+.hero-section {
+
+    background: var(--hero-bg);
+    color: var(--white-color);
+    width: 100%;
+    height: 500px;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-hold {
+    /* background-color: aqua; */
+    width: 85%;
+    height: 95%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+figure > img {
+    max-width: 100%;
+    height: 70%;
+    border-radius: 12px;
+    
+}
+
+.about-me {
+    /* background-color: red; */
+    width: 75%;
+    height: 65%;
+    margin-right: 4rem;
+    
+}
+
+.example-collapse-text {
+    background-color: var(--favorite-color);
+}

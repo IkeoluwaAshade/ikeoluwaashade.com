@@ -1,4 +1,32 @@
-.App {
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* ========== Color used ========== */
+
+  --white-color: #fff;
+  --black-color: #000;
+  --navy-blue: #00235b;
+  --favorite-color: #05203d;
+  --aqua: aqua;
+
+  --orange-color: orange;
+  --skyblue: skyblue;
+
+  --hero-bg: radial-gradient(circle at 4% 25%, rgba(0, 40, 83, 1) 16%, rgba(4, 12, 24, 1) 100%);
+
+ 
+}
+
+
+
+
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +63,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
