@@ -1,0 +1,75 @@
+/* Technology.css */
+
+#technology-section > h2 {
+    color: var(--favorite-color);
+    margin-top: 25px;
+    font-weight: 700;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.technology-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 10px; 
+    margin-right: 10px; 
+  }
+  
+  .technology-item {
+    width: calc(16.666% - 20px); /* Adjust the width and margin as needed */
+    margin-bottom: 3rem;
+    margin-left: 10px; /* Add margin to the left of each card */
+    margin-right: 10px; /* Add margin to the right of each card */
+  }
+  
+  .technology-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .technology-card img {
+    max-width: 100px;
+  }
+  
+
+  /* =========================================== */
+  /* ========== Mobile Responsiveness ========== */
+  /* =========================================== */
+
+  /* Technology.css */
+
+/* For screens smaller than 768px (adjust the breakpoint as needed) */
+@media (max-width: 768px) {
+    .technology-list {
+      justify-content: center; /* Center-align items */
+    }
+    
+    .technology-item {
+      width: calc(33.33% - 20px); /* Adjust width and margin as needed */
+    }
+  }
+  
+  /* For screens larger than 768px */
+  @media (min-width: 769px) {
+    .technology-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    
+    .technology-item {
+      width: calc(16.666% - 20px); /* Adjust width and margin as needed */
+    }
+  }
+  

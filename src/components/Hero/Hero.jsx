@@ -1,6 +1,6 @@
 import React from 'react'
 import './Hero.css'
-import profilePicture from '../Images/Dp.jfif' 
+ 
 
 /*import React, { useState } from 'react'
 import Button from 'react-bootstrap/Button';
@@ -17,7 +17,7 @@ const Hero = () => {
         <div className='hero-hold'>
 
             <figure>
-                <img src={ profilePicture } alt="Head Shot of Ikeoluwa" width={'270px'} height={'200px'} />
+                <img src="/Images/Dp.jfif"  alt="Head Shot of Ikeoluwa" width={'270px'} height={'200px'} />
             </figure>
 
             <div className='about-me'>

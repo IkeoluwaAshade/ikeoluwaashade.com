@@ -1,88 +1,36 @@
-import React from 'react'
 
-const Testimonial = () => {
+
+import React from 'react';
+import TestimonialSection from './TestimonialSection'; 
+import './Testimonial.css'; 
+
+
+
+const testimonial = [
+  {
+    text:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac tellus vel justo facilisis aliquet.',
+    author: 'John Doe',
+    jobTitle: 'Web Developer',
+    company: 'ABC Company',
+  },
+  // Add more testimonial objects as needed
+];
+
+function Testimonial() {
+
+
   return (
-    <div>Testimonial</div>
-  )
+
+    <div className="testimonial-section">
+        <h2>Testimonials</h2>
+        <div className="testimonial-cards">
+            {testimonial.map((testimonial, index) => (
+                <TestimonialSection key={index} {...testimonial} />
+            ))}
+        </div>
+    </div> 
+  );
 }
 
 export default Testimonial
-
-
-/* import React from 'react'
-import './Testimonial.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Carousel } from 'react-bootstrap';
-
-
-
-const Testimonial = () => {
-
-  return (
-    <div>
-      
-      <Carousel>
-
-        <Carousel.Item>
-
-          <img
-            className="d-block w-100"
-            src="image1.jpg"
-            alt="First slide"
-          />
-
-          <Carousel.Caption>
-
-            <h3>First slide label</h3>
-
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-
-          </Carousel.Caption>
-
-        </Carousel.Item>
-
-        <Carousel.Item>
-
-          <img
-            className="d-block w-100"
-            src="image1.jpg"
-            alt="Second slide"
-          />
-
-          <Carousel.Caption>
-
-            <h3>First slide label</h3>
-
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-
-          </Carousel.Caption>
-
-        </Carousel.Item>
-
-        <Carousel.Item>
-
-          <img
-            className="d-block w-100"
-            src="image1.jpg"
-            alt="Third slide"
-          />
-
-          <Carousel.Caption>
-
-            <h3>First slide label</h3>
-
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-
-          </Carousel.Caption>
-
-        </Carousel.Item>
-      
-      </Carousel>
-    </div> 
-  ) 
-  }
-
-
-export default Testimonial
-*/
-
