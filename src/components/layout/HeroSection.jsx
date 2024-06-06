@@ -39,6 +39,11 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+
+
+    @media (max-width: 768px) {
+        margin-top: 270px;
+    }
 `;
 
 const Wrapper = styled.div`
@@ -49,7 +54,7 @@ const Wrapper = styled.div`
     /* flex-direction: row; */
 
     @media (max-width: 768px) {
-        margin-top: 300px;
+        /* margin-top: 300px; */
 
         flex-direction: column;
     }
