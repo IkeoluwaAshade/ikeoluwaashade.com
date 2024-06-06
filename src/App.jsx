@@ -35,7 +35,7 @@ const App = () => {
         <ThemeProvider theme={themeMode}>
             <GlobalStyles />
             <Header toggleTheme={toggleTheme} theme={theme} />
-            <HeroSection />
+            {/* <HeroSection /> */}
         </ThemeProvider>
     );
 };
