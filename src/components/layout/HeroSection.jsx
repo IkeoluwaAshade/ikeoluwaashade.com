@@ -86,12 +86,12 @@ const HeroSection = () => {
                 <img src={Dp} alt="Profile" />
             </DpBox>
 
-            <AboutMeDiv>
+            {/* <AboutMeDiv>
                 <Title>About Me</Title>
                 <AboutMeText>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sed ipsa asperiores repellat voluptatum. Et, ipsa vel itaque officia provident ad aspernatur magni nam quas eveniet magnam deleniti impedit ullam.
                 </AboutMeText>
-            </AboutMeDiv>
+            </AboutMeDiv> */}
         </Wrapper>
     </Container>
   );
@@ -106,6 +106,7 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
 `;
 
 const Wrapper = styled.div`
@@ -119,13 +120,19 @@ const DpBox = styled.div`
     background-color: gray;
     border: 3px solid #ccc;
     border-radius: 10px;
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     img {
-        height: 200px;
-        width: 200px;
+        height: auto;
+        width: 100%;
+        max-height: 300px;
         object-fit: cover;
         border-radius: 10px;
     }
