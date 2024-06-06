@@ -1,79 +1,3 @@
-// import React from 'react';
-// import styled from 'styled-components'
-// import Dp from '../../assets/Dp.jpg'
-
-// const HeroSection = () => {
-//   return (
-//     <Container>
-//         <Wrapper>
-//             <DpBox>
-//                 <img src={Dp} alt="" />
-//             </DpBox>
-
-            
-//             <AboutMeDiv>
-//                 <Title>About Me</Title>
-//                 <AboutMeText>
-//                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sed ipsa asperiores repellat voluptatum. Et, ipsa vel itaque officia provident ad aspernatur magni nam quas eveniet magnam deleniti impedit ullam.
-//                 </AboutMeText>
-//             </AboutMeDiv>
-
-            
-//         </Wrapper>
-//     </Container>
-//   )
-// }
-
-// export default HeroSection
-
-// const Container = styled.div`
-//     background-color: brown;
-//     width: 100%;
-//     height: 300px;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// `
-
-// const Wrapper = styled.div`
-//     width: 85%;
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-// `
-
-// const DpBox = styled.div`
-//     background-color: gray;
-//     border: 1px solid #ccc;
-//     border-radius: 10px;
-//     border: 20px;
-//     width: 300px;
-//     height: 200px;
-//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-//     img {
-//         height: 200px;
-//         width: 200px;
-//         object-fit: cover;
-//         border-radius: 10px;
-//     }
-// `
-
-// const AboutMeDiv = styled.div`
-//     margin-left: 90px;
-    
-// `
-
-// const Title = styled.h2`
-    
-// `
-
-// const AboutMeText = styled.div`
-//     columns: 200px 2;
-//     column-gap: 30px;
-// `
-
-
 import React from 'react';
 import styled from 'styled-components';
 import Dp from '../../assets/Dp.jpg';
@@ -86,12 +10,20 @@ const HeroSection = () => {
                 <img src={Dp} alt="Profile" />
             </DpBox>
 
-            {/* <AboutMeDiv>
+            <AboutMeDiv>
                 <Title>About Me</Title>
                 <AboutMeText>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sed ipsa asperiores repellat voluptatum. Et, ipsa vel itaque officia provident ad aspernatur magni nam quas eveniet magnam deleniti impedit ullam.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium nobis modi voluptas deserunt fugiat maiores sint! Ex porro temporibus quae molestiae, aspernatur quia minus consequuntur incidunt architecto sunt odit corrupti!
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates rerum, eaque minus quos rem, eum laboriosam dolorem, perspiciatis enim eligendi similique? Fugit explicabo sint facilis asperiores dolore accusantium obcaecati ut?
+                {/* Ikeoluwa is a promising and business Oriented individual who is very passionate about growth and technology. I am keen to pursue a career in the tech industry. I am more zealous about solving consumer problems by making life easier for them using technology. 
+
+                My part time roles and volunteer work have also provided me with a range of workplace skills such as relationship building communication and team work.
+
+                
+                My vision is to make life easy. */}
                 </AboutMeText>
-            </AboutMeDiv> */}
+            </AboutMeDiv>
         </Wrapper>
     </Container>
   );
@@ -114,6 +46,13 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* flex-direction: row; */
+
+    @media (max-width: 768px) {
+        margin-top: 300px;
+
+        flex-direction: column;
+    }
 `;
 
 const DpBox = styled.div`
@@ -141,13 +80,19 @@ const DpBox = styled.div`
 const AboutMeDiv = styled.div`
     /* background-color: ${({ theme }) => theme.aboutMeBackground}; */
     margin-left: 90px;
+    
+    @media (max-width: 768px) {
+        margin-left: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
 `;
 
 const Title = styled.h2`
     color: ${({ theme }) => theme.titleColor};
 `;
 
-const AboutMeText = styled.div`
+const AboutMeText = styled.p`
     columns: 200px 2;
     column-gap: 30px;
     color: ${({ theme }) => theme.aboutMeTextColor};

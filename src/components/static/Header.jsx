@@ -2,15 +2,18 @@ import React, { useState } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from '../block/Themes/GlobalStyles'
 
+// Navigation
 import { FaBookOpen } from 'react-icons/fa';
 import { VscProject } from 'react-icons/vsc';
 import { FaBlogger } from 'react-icons/fa';
 import { MdNoPhotography } from 'react-icons/md';
 
+// Socials
 import { FaGithub } from 'react-icons/fa';
 import { GrLinkedin } from 'react-icons/gr';
 import { SiFrontendmentor } from 'react-icons/si';
 
+// Dark Mode ==and== Hamburger
 import { BsToggle2On, BsToggle2Off } from 'react-icons/bs';
 import { lightTheme, darkTheme } from '../block/Themes/themes';
 
