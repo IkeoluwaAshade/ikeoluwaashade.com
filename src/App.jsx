@@ -1,12 +1,43 @@
-import React from 'react'
+// import React from 'react'
+// import Header from './components/static/Header'
+// import HeroSection from './components/layout/HeroSection'
+
+
+// const App = () => {
+//   return (
+//     <div>
+//       <Header />
+//       <HeroSection />
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+import React, { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+import { GlobalStyles } from './components/block/Themes/GlobalStyles';
+import { lightTheme, darkTheme } from './components/block/Themes/themes'
 import Header from './components/static/Header'
+import HeroSection from './components/layout/HeroSection'
 
 const App = () => {
-  return (
-    <div>
-      <Header />
-    </div>
-  )
-}
+    const [theme, setTheme] = useState('light');
+    const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
-export default App
+    const toggleTheme = () => {
+        setTheme(theme === 'light' ? 'dark' : 'light');
+    };
+
+    return (
+        <ThemeProvider theme={themeMode}>
+            <GlobalStyles />
+            <Header toggleTheme={toggleTheme} theme={theme} />
+            <HeroSection />
+        </ThemeProvider>
+    );
+};
+
+export default App;
