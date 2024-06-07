@@ -13,15 +13,13 @@ const HeroSection = () => {
             <AboutMeDiv>
                 <Title>About Me</Title>
                 <AboutMeText>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium nobis modi voluptas deserunt fugiat maiores sint! Ex porro temporibus quae molestiae, aspernatur quia minus consequuntur incidunt architecto sunt odit corrupti!
-
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates rerum, eaque minus quos rem, eum laboriosam dolorem, perspiciatis enim eligendi similique? Fugit explicabo sint facilis asperiores dolore accusantium obcaecati ut?
-                {/* Ikeoluwa is a promising and business Oriented individual who is very passionate about growth and technology. I am keen to pursue a career in the tech industry. I am more zealous about solving consumer problems by making life easier for them using technology. 
+                    
+                Ikeoluwa is a promising and business Oriented individual who is very passionate about growth and technology. I am keen to pursue a career in the tech industry. I am more zealous about solving consumer problems by making life easier for them using technology. 
 
                 My part time roles and volunteer work have also provided me with a range of workplace skills such as relationship building communication and team work.
 
                 
-                My vision is to make life easy. */}
+                My vision is to make life easy. 
                 </AboutMeText>
             </AboutMeDiv>
         </Wrapper>
@@ -101,4 +99,5 @@ const AboutMeText = styled.p`
     columns: 200px 2;
     column-gap: 30px;
     color: ${({ theme }) => theme.aboutMeTextColor};
+    text-align: justify;
 `;
