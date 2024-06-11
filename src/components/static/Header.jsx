@@ -50,31 +50,31 @@ const Header = () => {
                     <NavDiv isOpen={isMenuOpen}>
                         <Nav>
                             <VscProject />
-                            <a href="#">Projects</a>
+                            <a href="#" target='_blank'>Projects</a>
                         </Nav>
 
                         <Nav>
                             <FaBlogger />
-                            <a href="https://ikeoluwaashade.blogspot.com/">Blog</a>
+                            <a href="https://ikeoluwaashade.blogspot.com/" target='_blank'>Blog</a>
                         </Nav>
 
                         <Nav>
                             <MdNoPhotography />
-                            <a href="#">Photography</a>
+                            <a href="#" target='_blank'>Photography</a>
                         </Nav>
                     </NavDiv>
 
                     <Socials isOpen={isMenuOpen}>
                         <IconContainer>
                             <Github>
-                                <a href='https://github.com/IkeoluwaAshade'><FaGithub /></a>
+                                <a href='https://github.com/IkeoluwaAshade' target='_blank'><FaGithub /></a>
                                 <Tooltip>Github</Tooltip>
                             </Github>
                         </IconContainer>
 
                         <IconContainer>
                             <Frontend>
-                                <a href='https://www.frontendmentor.io/profile/IkeoluwaAshade'><SiFrontendmentor />
+                                <a href='https://www.frontendmentor.io/profile/IkeoluwaAshade' target='_blank'><SiFrontendmentor />
                                 </a>
                                 <Tooltip>Frontend Mentor</Tooltip>
                             </Frontend>
@@ -82,7 +82,7 @@ const Header = () => {
 
                         <IconContainer>
                             <LinkedIn>
-                                <a href='https://www.linkedin.com/in/ikeoluwaashade'>
+                                <a href='https://www.linkedin.com/in/ikeoluwaashade' target='_blank'>
                                     <GrLinkedin />
                                 </a>
                                 <Tooltip>LinkedIn</Tooltip>
