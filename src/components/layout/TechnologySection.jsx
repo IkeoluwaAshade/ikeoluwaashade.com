@@ -22,15 +22,15 @@ const TechnologySection = () => {
                 />
 
                 <Card 
+                    CardTitle="Git"
+                />
+
+                <Card 
                     CardTitle="Photoshop"
                 />
 
                 <Card 
                     CardTitle="Lightroom"
-                />
-
-                <Card 
-                    CardTitle="CSS"
                 /></CardBox>
             </Cards>
         </Wrapper>
