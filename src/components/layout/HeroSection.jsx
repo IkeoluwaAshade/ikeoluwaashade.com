@@ -7,7 +7,7 @@ const HeroSection = () => {
     <Container>
         <Wrapper>
             <DpBox>
-                <img src={Dp} alt="Profile" />
+                <img src={Dp} alt="A Profile head shot of Ikeoluwa" />
             </DpBox>
 
             <AboutMeDiv>
@@ -50,11 +50,9 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* flex-direction: row; */
+    
 
     @media (max-width: 768px) {
-        /* margin-top: 300px; */
-
         flex-direction: column;
     }
 `;

@@ -44,6 +44,10 @@ export default TechnologySection
 const Container = styled.div`
     margin-top: 20px;
     text-align: center;
+
+    @media (max-width: 768px) {
+        margin-top: 250px;
+    }
 `
 
 const Wrapper = styled.div`
@@ -57,15 +61,15 @@ const Title = styled.h2`
 const Cards = styled.div`
     /* background-color: red; */
     width: 100%;
-    margin-top: 70px;
+    margin-top: 50px;
     
     display: flex;
     justify-content: center;
     align-items: center;
 
-    @media (max-width: 768px) {
+    /* @media (max-width: 768px) {
         flex-direction: column;
-    }
+    } */
 `
 
 const CardBox = styled.div`
