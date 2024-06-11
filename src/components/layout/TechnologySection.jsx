@@ -9,7 +9,7 @@ const TechnologySection = () => {
             <Title>Technologies and Tools</Title>
 
            <Cards>
-                <Card
+                <CardBox><Card
                     CardTitle="CSS"
                 />
 
@@ -31,7 +31,7 @@ const TechnologySection = () => {
 
                 <Card 
                     CardTitle="CSS"
-                />
+                /></CardBox>
             </Cards>
         </Wrapper>
         
@@ -44,28 +44,10 @@ export default TechnologySection
 const Container = styled.div`
     margin-top: 20px;
     text-align: center;
-
-    
-    /* display: flex; */
-    /* width: 100px; */
-    /* justify-content: center;
-    align-items: center; */
-    
-    
-    /* @media (max-width: 768px) {
-        margin-left: 0;
-        margin-top: 20px;
-        text-align: center;
-    } */
 `
 
 const Wrapper = styled.div`
-    /* background-color: red; */
     color: #070F2B;
-/* 
-    display: flex;
-    justify-content: center;
-    align-items: center; */
 `
 
 const Title = styled.h2`
@@ -73,22 +55,33 @@ const Title = styled.h2`
 `
 
 const Cards = styled.div`
-    background-color: red;
+    /* background-color: red; */
     width: 100%;
-    /* text-align: 20px; */
-    margin: auto;
-
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    margin-top: 70px;
+    
+    display: flex;
     justify-content: center;
     align-items: center;
-
 
     @media (max-width: 768px) {
         flex-direction: column;
     }
 `
 
+const CardBox = styled.div`
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
 
+    @media (max-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 70px;
+        justify-content: center;
+        align-items: center;
+    }
+`
 
