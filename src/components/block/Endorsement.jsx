@@ -6,8 +6,7 @@ const Endorsement = ({ text, endorserImage, endorserInfo, activeIndex }) => {
   return (
     <EndorsementContainer>
         <EndorsementBox>
-            <EndorsementText>       {text}
-            </EndorsementText>
+            <EndorsementText>{text}</EndorsementText>
 
             <EndorserProfile>
                 <EndorserImage src= {endorserImage} alt='An head shot of ...' />
@@ -51,6 +50,7 @@ const EndorsementBox = styled.div`
 const EndorsementText = styled.div`
    margin-bottom: 20px;
    max-width: 600px;
+   font-weight: 400;
 `
 
 const EndorserProfile = styled.div`
@@ -65,6 +65,7 @@ const EndorserImage = styled.img`
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    border: 3px solid #b7ababe2;
     object-fit: cover;
     margin-right: 10px;
     margin-bottom: 20px;
@@ -72,15 +73,15 @@ const EndorserImage = styled.img`
 const EndorserInfo = styled.div`
     
 `
-const SliderIndicators = styled.div`
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-`
-const Indicator = styled.div`
-    width: 10px;
-    height: 10px;
-    background-color: ${props => (props.active ? '#333' : '#ccc')};
-    border-radius: 50%;
-    margin: 0 5px;
-`
+// const SliderIndicators = styled.div`
+//     display: flex;
+//     justify-content: center;
+//     margin-top: 20px;
+// `
+// const Indicator = styled.div`
+//     width: 10px;
+//     height: 10px;
+//     background-color: ${props => (props.active ? '#333' : '#ccc')};
+//     border-radius: 50%;
+//     margin: 0 5px;
+// `

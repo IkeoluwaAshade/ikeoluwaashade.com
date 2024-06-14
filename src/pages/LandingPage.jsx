@@ -4,6 +4,8 @@ import { GlobalStyles } from '../components/block/Themes/GlobalStyles';
 import { lightTheme, darkTheme } from '../components/block/Themes/themes';
 import Header from '../components/static/Header';
 import HeroSection from '../components/layout/HeroSection'
+import TechnologySection from '../components/layout/TechnologySection';
+import EndorsementSection from '../components/layout/EndorsementSection';
 
 const LandingPage = () => {
 
@@ -19,6 +21,8 @@ const LandingPage = () => {
         <GlobalStyles />
         <Header toggleTheme={toggleTheme} theme={theme} />
         <HeroSection />
+        <TechnologySection />
+        <EndorsementSection />
     </ThemeProvider>
   )
 }

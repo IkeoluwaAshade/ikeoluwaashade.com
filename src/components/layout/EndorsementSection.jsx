@@ -131,30 +131,36 @@ import styled from 'styled-components';
 import Slider from 'react-slick';
 import Endorsement from '../block/Endorsement';
 import Dp from '../../assets/Dp.jpg'
+import Funmi from '../../assets/Funmi2.jpg'
+
 
 
 const EndorsementSection = () => {
   const endorsements = [
     {
+      text: 'A determined and dedicated young professional. Outstanding and exceptional at what he does',
+      endorserImage: Funmi,
+      endorserInfo: 'Funmilola Ariyibi (AAT, FCA, CFE, MBA)',
+    },
+
+    {
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum magni alias impedit recusandae eius qui voluptatem vitae ut asperiores ad, possimus sit consequatur quos facilis dicta. Ducimus quos eos dolore.',
       endorserImage: Dp,
-      endorserInfo: 'Dr. Akin Akinpelu ACA, FCA, Dip, IFR',
-    },
-    {
-      text: 'Fantastic service and quality. It exceeded my expectations!',
-      endorserImage: Dp,
       endorserInfo: 'Mrs. Jane Doe PhD, MBA',
     },
-    {
-      text: 'Fantastic service and quality. It exceeded my expectations!',
-      endorserImage: Dp,
-      endorserInfo: 'Mrs. Jane Doe PhD, MBA',
-    },
-    {
-      text: 'Fantastic service and quality. It exceeded my expectations!',
-      endorserImage: Dp,
-      endorserInfo: 'Mrs. Jane Doe PhD, MBA',
-    },
+
+    // {
+    //   text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum magni alias impedit recusandae eius qui voluptatem vitae ut asperiores ad, possimus sit consequatur quos facilis dicta. Ducimus quos eos dolore.',
+    //   endorserImage: Dp,
+    //   endorserInfo: 'Mrs. Jane Doe PhD, MBA',
+    // },
+
+    // {
+    //   text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum magni alias impedit recusandae eius qui voluptatem vitae ut asperiores ad, possimus sit consequatur quos facilis dicta. Ducimus quos eos dolore.',
+    //   endorserImage: Dp,
+    //   endorserInfo: 'Mrs. Jane Doe PhD, MBA',
+    // },
+
   ];
 
   const settings = {
