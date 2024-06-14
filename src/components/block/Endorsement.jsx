@@ -38,11 +38,11 @@ const EndorsementBox = styled.div`
     background-color: #fff;
     color: #070f2b;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    /* height: 250px; */
+    height: 250px;
     /* width: 500px; */
     width: 100%;
     max-width: 500px;
-    height: auto;
+    /* height: auto; */
     padding: 20px;
     text-align: center;
 
