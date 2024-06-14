@@ -131,7 +131,7 @@ import styled from 'styled-components';
 import Slider from 'react-slick';
 import Endorsement from '../block/Endorsement';
 import Dp from '../../assets/Dp.jpg'
-import Funmi from '../../assets/Funmi2.jpg'
+import Funmi from '../../assets/Funmi.jpg'
 
 
 
@@ -144,7 +144,7 @@ const EndorsementSection = () => {
     },
 
     {
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum magni alias impedit recusandae eius qui voluptatem vitae ut asperiores ad, possimus sit consequatur quos facilis dicta. Ducimus quos eos dolore.',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum magni alias impedit recusandae eius qui voluptatem vitae',
       endorserImage: Dp,
       endorserInfo: 'Mrs. Jane Doe PhD, MBA',
     },

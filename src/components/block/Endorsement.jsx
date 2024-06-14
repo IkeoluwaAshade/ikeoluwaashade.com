@@ -50,7 +50,7 @@ const EndorsementBox = styled.div`
 const EndorsementText = styled.div`
    margin-bottom: 20px;
    max-width: 600px;
-   font-weight: 400;
+   font-weight: 500;
 `
 
 const EndorserProfile = styled.div`
@@ -58,6 +58,7 @@ const EndorserProfile = styled.div`
    flex-direction: column;
    align-items: center;
    margin-top: 20px;
+   font-weight: 500;
 `
 
 const EndorserImage = styled.img`
