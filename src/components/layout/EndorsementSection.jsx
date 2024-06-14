@@ -203,13 +203,18 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   /* height: 100vh; */
-  text-align: center;
+  
 `;
 
 const Wrapper = styled.div`
   color: #070f2b;
   max-width: 800px;
   width: 100%;
+  padding: 0 20px;
+
+  @media (max-width: 500px) {
+    padding: 0 15px;
+  }
 `;
 
 const Title = styled.h2`
@@ -223,23 +228,31 @@ const SliderContainer = styled.div`
 `;
 
 const StyledSlider = styled(Slider)`
-  .slick-list {
-    padding: 0 20px;
-  }
+   .slick-list {
+     padding: 0 20px;
 
-  .slider-slide {
-    display: flex;
-    justify-content: center;
-  }
+     @media (max-width: 500px) {
+       padding: 0 10px;
+     }
+   }
 
-  .slick-dots {
-    bottom: -30px;
-  }
+   .slider-slide {
+     display: flex;
+     justify-content: center;
+   }
 
-  .slick-prev,
-  .slick-next {
-    z-index: 1;
-  } 
+   .slick-dots {
+     bottom: -30px;
+
+     @media (max-width: 500px) {
+       bottom: -20px;
+     }
+   }
+
+   .slick-prev,
+   .slick-next {
+     z-index: 1;
+   } 
 
   @media (max-width: 500px) {
     .slick-list {
@@ -249,5 +262,5 @@ const StyledSlider = styled(Slider)`
     .slick-dots {
       bottom: -20px;
     }
-  }
+  } 
 `
