@@ -197,7 +197,7 @@ export default EndorsementSection;
 
 const Container = styled.div`
   margin-bottom: 70px;
-  /* text-align: center; */
+  text-align: center;
 
   display: flex;
   justify-content: center;
@@ -212,10 +212,42 @@ const Wrapper = styled.div`
   width: 100%;
 `;
 
-const Title = styled.h2``;
+const Title = styled.h2`
+  margin-bottom: 20px;
+`;
 
 const SliderContainer = styled.div`
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
 `;
+
+const StyledSlider = styled(Slider)`
+  .slick-list {
+    padding: 0 20px;
+  }
+
+  .slider-slide {
+    display: flex;
+    justify-content: center;
+  }
+
+  .slick-dots {
+    bottom: -30px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    z-index: 1;
+  } 
+
+  @media (max-width: 500px) {
+    .slick-list {
+      padding: 0 10px;
+    }
+
+    .slick-dots {
+      bottom: -20px;
+    }
+  }
+`

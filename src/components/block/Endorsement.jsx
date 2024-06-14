@@ -40,17 +40,28 @@ const EndorsementBox = styled.div`
     width: 500px;
     height: 250px;
 
+    max-width: 500px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px;
+    padding: 20px;
     text-align: center;
+
+    @media (max-width: 500px) {
+        padding: 10px;
+    }
 `
 
 const EndorsementText = styled.div`
    margin-bottom: 20px;
-   max-width: 600px;
+   /* max-width: 600px; */
    font-weight: 500;
+   font-size: 1rem;
+
+   @media (max-width: 500px) {
+    font-size: 0.875rem;
+   }
 `
 
 const EndorserProfile = styled.div`
@@ -70,9 +81,19 @@ const EndorserImage = styled.img`
     object-fit: cover;
     margin-right: 10px;
     margin-bottom: 20px;
+
+    @media (max-width: 500px) {
+        width: 80px;
+        height: 80px;
+    }
 `
+
 const EndorserInfo = styled.div`
-    
+    font-size: 0.875rem;
+
+    @media (max-width: 500px) {
+        font-size: 0.75rem;
+    }
 `
 // const SliderIndicators = styled.div`
 //     display: flex;
