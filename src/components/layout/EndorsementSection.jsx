@@ -233,6 +233,7 @@ const SliderContainer = styled.div`
   margin: 0 auto;
 
   @media (max-width: 500px) {
+    /* background-color: red; */
     width: 100%;
     max-width: 370px;
     margin: 0 auto;
