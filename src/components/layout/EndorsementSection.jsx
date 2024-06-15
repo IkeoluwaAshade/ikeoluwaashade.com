@@ -196,6 +196,8 @@ const EndorsementSection = () => {
 export default EndorsementSection;
 
 const Container = styled.div`
+  /* background-color: red; */
+  /* height: 450px; */
   margin-bottom: 70px;
   text-align: center;
 
@@ -204,8 +206,7 @@ const Container = styled.div`
   align-items: center;
   
   @media (max-width: 500px) {
-    /* background-color: red; */
-    /* width: 100vw; */
+   
   }
   
 `;
@@ -235,6 +236,8 @@ const SliderContainer = styled.div`
     width: 100%;
     max-width: 370px;
     margin: 0 auto;
+
+    
   }
 `;
 

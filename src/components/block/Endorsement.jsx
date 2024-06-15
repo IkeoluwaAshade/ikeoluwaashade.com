@@ -27,12 +27,12 @@ const EndorsementContainer = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 20px;
+    /* padding: 20px; */
 
   @media (max-width: 500px) {
     /* background-color: red; */
     width: 100%;
-    padding: 10px;
+    padding: 12px 12px 12px 0;
   }
 `
 
