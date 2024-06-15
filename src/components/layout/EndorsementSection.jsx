@@ -183,7 +183,7 @@ const EndorsementSection = () => {
                 text={endorsement.text}
                 endorserImage={endorsement.endorserImage}
                 endorserInfo={endorsement.endorserInfo}
-                // activeIndex={index}
+                activeIndex={index}
               />
             ))}
           </Slider>
@@ -202,7 +202,11 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 100vh; */
+  
+  @media (max-width: 500px) {
+    /* background-color: red; */
+    /* width: 100vw; */
+  }
   
 `;
 
@@ -214,6 +218,7 @@ const Wrapper = styled.div`
 
   @media (max-width: 500px) {
     padding: 0 15px;
+    
   }
 `;
 
@@ -225,6 +230,12 @@ const SliderContainer = styled.div`
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
+
+  @media (max-width: 500px) {
+    width: 100%;
+    max-width: 370px;
+    margin: 0 auto;
+  }
 `;
 
 const StyledSlider = styled(Slider)`
@@ -252,7 +263,14 @@ const StyledSlider = styled(Slider)`
    .slick-prev,
    .slick-next {
      z-index: 1;
+     color: #070f2b;
    } 
+
+  .slick-prev:before,
+  .slick-next:before {
+    color: #070f2b; 
+  }
+
 
   @media (max-width: 500px) {
     .slick-list {

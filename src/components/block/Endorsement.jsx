@@ -30,6 +30,8 @@ const EndorsementContainer = styled.div`
     padding: 20px;
 
   @media (max-width: 500px) {
+    /* background-color: red; */
+    width: 100%;
     padding: 10px;
   }
 `
@@ -42,7 +44,6 @@ const EndorsementBox = styled.div`
     /* width: 500px; */
     width: 100%;
     max-width: 500px;
-    /* height: auto; */
     padding: 20px;
     text-align: center;
 
@@ -53,6 +54,7 @@ const EndorsementBox = styled.div`
 
     @media (max-width: 500px) {
         padding: 15px;
+        max-width: 300px;
     }
 `
 
