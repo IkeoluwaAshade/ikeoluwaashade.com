@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from '../components/block/Themes/GlobalStyles';
 import { lightTheme, darkTheme } from '../components/block/Themes/themes';
-import Header from '../components/static/Header';
+import HeaderSection from '../components/static/HeaderSection';
 import HeroSection from '../components/layout/HeroSection'
 import TechnologySection from '../components/layout/TechnologySection';
 import EndorsementSection from '../components/layout/EndorsementSection';
-import Footer from '../components/static/Footer';
+import FooterSection from '../components/static/FooterSection';
 
 const LandingPage = () => {
 
@@ -20,11 +20,11 @@ const LandingPage = () => {
   return (
     <ThemeProvider theme={themeMode}>
         <GlobalStyles />
-        <Header toggleTheme={toggleTheme} theme={theme} />
+        <HeaderSection toggleTheme={toggleTheme} theme={theme} />
         <HeroSection />
         <TechnologySection />
         <EndorsementSection />
-        <Footer />
+        <FooterSection />
     </ThemeProvider>
   )
 }
