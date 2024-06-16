@@ -6,6 +6,7 @@ import Header from '../components/static/Header';
 import HeroSection from '../components/layout/HeroSection'
 import TechnologySection from '../components/layout/TechnologySection';
 import EndorsementSection from '../components/layout/EndorsementSection';
+import Footer from '../components/static/Footer';
 
 const LandingPage = () => {
 
@@ -23,6 +24,7 @@ const LandingPage = () => {
         <HeroSection />
         <TechnologySection />
         <EndorsementSection />
+        <Footer />
     </ThemeProvider>
   )
 }

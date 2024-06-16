@@ -50,31 +50,31 @@ const Header = () => {
                     <NavDiv isOpen={isMenuOpen}>
                         <Nav>
                             <VscProject />
-                            <a href="#" target='_blank'>Projects</a>
+                            <a href="#" target='_blank' rel="noopener noreferrer">Projects</a>
                         </Nav>
 
                         <Nav>
                             <FaBlogger />
-                            <a href="https://ikeoluwaashade.blogspot.com/" target='_blank'>Blog</a>
+                            <a href="https://ikeoluwaashade.blogspot.com/" target='_blank' rel="noopener noreferrer">Blog</a>
                         </Nav>
 
                         <Nav>
                             <MdNoPhotography />
-                            <a href="#" target='_blank'>Photography</a>
+                            <a href="#" target='_blank' rel="noopener noreferrer">Photography</a>
                         </Nav>
                     </NavDiv>
 
                     <Socials isOpen={isMenuOpen}>
                         <IconContainer>
                             <Github>
-                                <a href='https://github.com/IkeoluwaAshade' target='_blank'><FaGithub /></a>
+                                <a href='https://github.com/IkeoluwaAshade' target='_blank' rel="noopener noreferrer"><FaGithub /></a>
                                 <Tooltip>Github</Tooltip>
                             </Github>
                         </IconContainer>
 
                         <IconContainer>
                             <Frontend>
-                                <a href='https://www.frontendmentor.io/profile/IkeoluwaAshade' target='_blank'><SiFrontendmentor />
+                                <a href='https://www.frontendmentor.io/profile/IkeoluwaAshade' target='_blank' rel="noopener noreferrer"><SiFrontendmentor />
                                 </a>
                                 <Tooltip>Frontend Mentor</Tooltip>
                             </Frontend>
@@ -82,7 +82,7 @@ const Header = () => {
 
                         <IconContainer>
                             <LinkedIn>
-                                <a href='https://www.linkedin.com/in/ikeoluwaashade' target='_blank'>
+                                <a href='https://www.linkedin.com/in/ikeoluwaashade' target='_blank' rel="noopener noreferrer">
                                     <GrLinkedin />
                                 </a>
                                 <Tooltip>LinkedIn</Tooltip>
@@ -110,6 +110,7 @@ const Container = styled.div`
     color: ${({ theme }) => theme.text};
     width: 100%;
     height: 100px;
+
     display: flex;
     justify-content: center;
     align-items: center;
