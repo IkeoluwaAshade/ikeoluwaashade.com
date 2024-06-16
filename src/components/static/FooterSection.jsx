@@ -1,13 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
-import { FaCopyright } from 'react-icons/fa'
+
 
 const Footer = () => {
   return (
     <Container>
         <Wrapper>
             <Ike>
-                <FaCopyright /> &copy; {new Date().getFullYear()} Ikeoluwa Ashade <br /> 
+                &copy; {new Date().getFullYear()} Ikeoluwa Ashade <br /> 
             </Ike>
 
             <BuiltWith>
@@ -46,6 +46,11 @@ const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    @media ( max-width: 500px) {
+        /* background-color: red; */
+        font-size: 12px;
+    }
 
 `
 
