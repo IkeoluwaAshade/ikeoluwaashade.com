@@ -19,7 +19,7 @@ const HeroSection = () => {
                 My part time roles and volunteer work have also provided me with a range of workplace skills such as relationship building communication and team work.
 
                 
-                My vision is to make life easy. 
+                My vision is to make life easy.. 
                 </AboutMeText>
             </AboutMeDiv>
         </Wrapper>
