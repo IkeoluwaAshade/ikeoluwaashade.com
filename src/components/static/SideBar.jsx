@@ -39,24 +39,25 @@ const SideBar = ({toggle, setToggle}) => {
 
             <Socials>
                 <Github>
-                    <a href='https://github.com/IkeoluwaAshade'           target='_blank' rel="noopener noreferrer">
-                        <FaGithub />
+                    <FaGithub />
+                    <a href='https://github.com/IkeoluwaAshade' target='_blank' rel="noopener noreferrer">
+                        {/* <FaGithub /> */}
                     </a>
-                    <Tooltip>Github</Tooltip>
+                    {/* <Tooltip>Github</Tooltip> */}
                 </Github>
                 
                 <Frontend>
-                    <a href='https://www.frontendmentor.io/profile/IkeoluwaAshade' target='_blank' rel="noopener noreferrer">
-                        <SiFrontendmentor />
+                    <SiFrontendmentor />
+                    <a href='https://www.frontendmentor.io/profile/IkeoluwaAshade' target='_blank' rel="noopener noreferrer">    
                     </a>
-                    <Tooltip>Frontend Mentor</Tooltip>
+                    {/* <Tooltip>Frontend Mentor</Tooltip> */}
                 </Frontend>
 
                 <LinkedIn>
+                    <GrLinkedin  />
                     <a href='https://www.linkedin.com/in/ikeoluwaashade' target='_blank' rel="noopener noreferrer">
-                        <GrLinkedin />
                     </a>
-                    <Tooltip>LinkedIn</Tooltip>
+                    {/* <Tooltip>LinkedIn</Tooltip> */}
                 </LinkedIn>
 
                 {/* <DarkMode onClick={toggleTheme}>
@@ -86,8 +87,10 @@ const Container = styled.div`
 `
 
 const Wrapper = styled.div`
+    /* background-color: red; */
+    height: 400px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
 `
@@ -100,11 +103,98 @@ const Navs = styled.div`
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: space-between;
 `
 
-const Socials = styled.div``
+const Socials = styled.div`
+    /* background-color: red; */
+    height: 70px;
+    width: 85px;
+    /* margin: 0 25px; */
+    margin-bottom: 20px;
+
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+
+`
 const Tooltip = styled.div``
-const Github = styled.div``
-const Frontend = styled.div``
-const LinkedIn = styled.div``
+const Github = styled.div`
+    transition: all 550ms;
+    /* background-color: red; */
+    /* width: 75px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        color: ${({ theme }) => theme.text};
+        text-decoration: none;
+        transition: 0.5s ease;
+
+        &:hover {
+            color: aqua;
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+    }
+
+    &:hover {
+        color: aqua;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+`
+const Frontend = styled.div`
+    transition: all 550ms;
+    /* background-color: red; */
+    /* width: 150px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        color: ${({ theme }) => theme.text};
+        text-decoration: none;
+        transition: 0.5s ease;
+
+        &:hover {
+            color: aqua;
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+    }
+
+    &:hover {
+        color: aqua;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+`
+const LinkedIn = styled.div`
+    transition: all 550ms;
+    /* background-color: red; */
+    /* width: 85px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        color: ${({ theme }) => theme.text};
+        text-decoration: none;
+        transition: 0.5s ease;
+
+        &:hover {
+            color: aqua;
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+    }
+
+    &:hover {
+        color: aqua;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+`

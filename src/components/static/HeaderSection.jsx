@@ -68,23 +68,26 @@ const Header = () => {
                     <Socials /* isOpen={isMenuOpen} */>
                         <IconContainer>
                             <Github>
-                                <a href='https://github.com/IkeoluwaAshade' target='_blank' rel="noopener noreferrer"><FaGithub /></a>
+                                <FaGithub />
+                                <a href='https://github.com/IkeoluwaAshade' target='_blank' rel="noopener noreferrer"></a>
                                 <Tooltip>Github</Tooltip>
                             </Github>
                         </IconContainer>
 
                         <IconContainer>
                             <Frontend>
-                                <a href='https://www.frontendmentor.io/profile/IkeoluwaAshade' target='_blank' rel="noopener noreferrer"><SiFrontendmentor />
+                                <SiFrontendmentor />
+                                <a href='https://www.frontendmentor.io/profile/IkeoluwaAshade' target='_blank' rel="noopener noreferrer">
                                 </a>
+                                
                                 <Tooltip>Frontend Mentor</Tooltip>
                             </Frontend>
                         </IconContainer>
 
                         <IconContainer>
                             <LinkedIn>
+                                <GrLinkedin />
                                 <a href='https://www.linkedin.com/in/ikeoluwaashade' target='_blank' rel="noopener noreferrer">
-                                    <GrLinkedin />
                                 </a>
                                 <Tooltip>LinkedIn</Tooltip>
                             </LinkedIn>
