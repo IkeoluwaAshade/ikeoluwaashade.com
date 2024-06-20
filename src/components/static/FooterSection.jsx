@@ -25,7 +25,7 @@ export default Footer
 const Container = styled.footer`
     background-color: #123456;
     color: #fff;
-    width: 100%;
+    width: 100vw;
     height: 70px;
 
     display: flex;
@@ -38,7 +38,7 @@ const Container = styled.footer`
 
 const Wrapper = styled.div`
     /* background-color: red; */
-    width: 85%;
+    width: 85vw;
     font-weight: 500;
     
     

@@ -18,6 +18,7 @@ import { BsToggle2On, BsToggle2Off } from 'react-icons/bs';
 import { lightTheme, darkTheme } from '../block/Themes/themes';
 
 import { FiMenu, FiX } from 'react-icons/fi';
+import SideBar from './SideBar';
 
 
 
@@ -28,9 +29,9 @@ const Header = () => {
         setTheme(theme === 'light' ? 'dark' : 'light');
     };
 
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const toggleMenu = () => {
-        setIsMenuOpen((prevMenuOpen) => !prevMenuOpen);
+    const [toggle, setToggle] = useState(false);
+    const toggleChange = () => {
+        setToggle(!toggle);
     };
 
     
@@ -43,11 +44,11 @@ const Header = () => {
                 <Wrapper>
                     <Logo>Ikeoluwa Ashade</Logo>
 
-                    <MenuIcon onClick={toggleMenu}>
+                    {/* <MenuIcon onClick={toggleMenu}>
                         {isMenuOpen ? <FiX size={25} /> : <FiMenu size = {25} />}
-                    </MenuIcon>
+                    </MenuIcon> */}
 
-                    <NavDiv isOpen={isMenuOpen}>
+                    <NavDiv /* isOpen={isMenuOpen} */ >
                         <Nav>
                             <VscProject />
                             <a href="#" target='_blank' rel="noopener noreferrer">Projects</a>
@@ -64,7 +65,7 @@ const Header = () => {
                         </Nav>
                     </NavDiv>
 
-                    <Socials isOpen={isMenuOpen}>
+                    <Socials /* isOpen={isMenuOpen} */>
                         <IconContainer>
                             <Github>
                                 <a href='https://github.com/IkeoluwaAshade' target='_blank' rel="noopener noreferrer"><FaGithub /></a>
@@ -96,9 +97,18 @@ const Header = () => {
                             </DarkMode>
                         </IconContainer>
                     </Socials>
+
+                    <Side>
+                        {toggle ? (
+                            <FiX  onClick={toggleChange} size='25px' />
+                        ) : (
+                            <FiMenu onClick={toggleChange} size='25px' />
+                        )}
+                    </Side>
                 </Wrapper>
             
             </Container>
+            {toggle ? <SideBar setToggle={setToggle} toggle={toggle} /> : null}
         </ThemeProvider>
     );
 };
@@ -140,6 +150,8 @@ const NavDiv = styled.div`
     align-items: center;
 
     @media (max-width: 768px) {
+        background-color: gray;
+        height: 500px;
         flex-direction: column;
         position: absolute;
         top: 100px;
@@ -187,6 +199,7 @@ const Socials = styled.div`
     transition: all 550ms;
 
     @media (max-width: 768px) {
+        
         flex-direction: column;
         position: absolute;
         top: 250px;
@@ -301,11 +314,18 @@ const DarkMode = styled.div`
     cursor: pointer;
 `;
 
-const MenuIcon = styled.div`
-  display: none;
-  cursor: pointer;
+// const MenuIcon = styled.div`
+//   display: none;
+//   cursor: pointer;
 
-  @media (max-width: 768px) {
-    display: flex;
-  }
-`;
+//   @media (max-width: 768px) {
+//     display: flex;
+//   }
+// `;
+
+const Side = styled.div`
+    display: none;
+    @media (max-width: 768px) {
+        display: block;
+    }
+`

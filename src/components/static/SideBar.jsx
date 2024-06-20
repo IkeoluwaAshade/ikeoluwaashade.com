@@ -1,0 +1,110 @@
+import React from 'react'
+import styled from 'styled-components'
+// Navigation
+import { FaBookOpen } from 'react-icons/fa';
+import { VscProject } from 'react-icons/vsc';
+import { FaBlogger } from 'react-icons/fa';
+import { MdNoPhotography } from 'react-icons/md';
+
+// Socials
+import { FaGithub } from 'react-icons/fa';
+import { GrLinkedin } from 'react-icons/gr';
+import { SiFrontendmentor } from 'react-icons/si';
+
+// Dark Mode ==and== Hamburger
+// import { BsToggle2On, BsToggle2Off } from 'react-icons/bs';
+// import { lightTheme, darkTheme } from '../block/Themes/themes';
+
+const SideBar = ({toggle, setToggle}) => {
+  return (
+    <Container>
+        <Wrapper>
+            <NavDiv>
+                <Navs to='/' onClick={() => {setToggle(false);}}>
+                    <span>Home</span>
+                </Navs>
+
+                <Navs to='/Project' onClick={() => {setToggle(false);}}>
+                    <span>Projects</span>
+                </Navs>
+
+                <Navs to='/Blog' onClick={() => {setToggle(false);}}>
+                    <span>Blog</span>
+                </Navs>
+
+                <Navs to='/Photography' onClick={() => {setToggle(false);}}>
+                    <span>Photography</span>
+                </Navs>
+            </NavDiv>
+
+            <Socials>
+                <Github>
+                    <a href='https://github.com/IkeoluwaAshade'           target='_blank' rel="noopener noreferrer">
+                        <FaGithub />
+                    </a>
+                    <Tooltip>Github</Tooltip>
+                </Github>
+                
+                <Frontend>
+                    <a href='https://www.frontendmentor.io/profile/IkeoluwaAshade' target='_blank' rel="noopener noreferrer">
+                        <SiFrontendmentor />
+                    </a>
+                    <Tooltip>Frontend Mentor</Tooltip>
+                </Frontend>
+
+                <LinkedIn>
+                    <a href='https://www.linkedin.com/in/ikeoluwaashade' target='_blank' rel="noopener noreferrer">
+                        <GrLinkedin />
+                    </a>
+                    <Tooltip>LinkedIn</Tooltip>
+                </LinkedIn>
+
+                {/* <DarkMode onClick={toggleTheme}>
+                    {theme === 'light' ? <BsToggle2Off size={25} /> : <BsToggle2On size={25} />}
+                    <Tooltip>{theme === 'light' ? 'Switch to Dark Mode' : 'Switch to light Mode'}</Tooltip>
+                </DarkMode> */}
+            </Socials>
+
+
+        </Wrapper>
+    </Container>
+  )
+}
+
+export default SideBar
+
+const Container = styled.div`
+    height: 100vh;
+    width: 100%;
+    background: rgba(7, 15, 43, 0.7);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    position: fixed;
+    z-index: 10;
+`
+
+const Wrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+`
+
+const NavDiv = styled.div``
+const Navs = styled.div`
+    margin: 25px 0;
+    color: #fff;
+    font-size: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+const Socials = styled.div``
+const Tooltip = styled.div``
+const Github = styled.div``
+const Frontend = styled.div``
+const LinkedIn = styled.div``

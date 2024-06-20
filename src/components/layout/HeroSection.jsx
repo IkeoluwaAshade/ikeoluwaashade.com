@@ -2,7 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Dp from '../../assets/Dp.jpg';
 
-const HeroSection = () => {
+const HeroSection = () => {  
+
   return (
     <Container>
         <Wrapper>
@@ -92,6 +93,7 @@ const AboutMeDiv = styled.div`
 
 const Title = styled.h2`
     color: ${({ theme }) => theme.titleColor};
+    font-size: 3vw;
 `;
 
 const AboutMeText = styled.p`
