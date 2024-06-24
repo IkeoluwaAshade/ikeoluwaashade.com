@@ -129,7 +129,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Slider from 'react-slick';
-import Endorsement from '../block/Endorsement';
+import Endorsement from '../../components/block/Endorsement';
 import Dp from '../../assets/Dp.jpg'
 import Funmi from '../../assets/Funmi.jpg'
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Card from '../block/Card'
+import Card from '../../components/block/Card'
 
 const TechnologySection = () => {
   return (

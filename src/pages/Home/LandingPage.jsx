@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
-import { GlobalStyles } from '../components/block/Themes/GlobalStyles';
-import { lightTheme, darkTheme } from '../components/block/Themes/themes';
-import HeaderSection from '../components/static/HeaderSection';
-import HeroSection from '../components/layout/HeroSection'
-import TechnologySection from '../components/layout/TechnologySection';
-import EndorsementSection from '../components/layout/EndorsementSection';
-import FooterSection from '../components/static/FooterSection';
+import { GlobalStyles } from '../../components/block/Themes/GlobalStyles';
+import { lightTheme, darkTheme } from '../../components/block/Themes/themes';
+import HeaderSection from '../../components/static/HeaderSection';
+import HeroSection from './HeroSection';
+import TechnologySection from './TechnologySection';
+import EndorsementSection from './EndorsementSection';
+import FooterSection from '../../components/static/FooterSection';
 
 const LandingPage = () => {
 
