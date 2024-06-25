@@ -11,6 +11,8 @@ import { FaGithub } from 'react-icons/fa';
 import { GrLinkedin } from 'react-icons/gr';
 import { SiFrontendmentor } from 'react-icons/si';
 
+import { Link } from 'react-router-dom';
+
 // Dark Mode ==and== Hamburger
 // import { BsToggle2On, BsToggle2Off } from 'react-icons/bs';
 // import { lightTheme, darkTheme } from '../block/Themes/themes';
@@ -20,44 +22,53 @@ const SideBar = ({toggle, setToggle}) => {
     <Container>
         <Wrapper>
             <NavDiv>
-                <Navs to='/' onClick={() => {setToggle(false);}}>
+                <StyledLink to='/'>
+                    <Navs  onClick={() => {setToggle(false);}}>
                     <span>Home</span>
-                </Navs>
+                    </Navs>
+                </StyledLink>
 
-                <Navs to='/Project' onClick={() => {setToggle(false);}}>
+                <StyledLink to='/Project'>
+                    <Navs onClick={() => {setToggle(false);}}>
                     <span>Projects</span>
-                </Navs>
+                    </Navs>
+                </StyledLink>
 
-                <Navs to='/Blog' onClick={() => {setToggle(false);}}>
+                <StyledLink to='/Blog'>
+                    <Navs onClick={() => {setToggle(false);}}>
                     <span>Blog</span>
-                </Navs>
+                    </Navs>
+                </StyledLink>
 
-                <Navs to='/Photography' onClick={() => {setToggle(false);}}>
+                <StyledLink to='/Photography'>
+                    <Navs onClick={() => {setToggle(false);}}>
                     <span>Photography</span>
-                </Navs>
+                    </Navs>
+                </StyledLink>
             </NavDiv>
 
             <Socials>
                 <Github>
-                    <FaGithub />
+                    
                     <a href='https://github.com/IkeoluwaAshade' target='_blank' rel="noopener noreferrer">
-                        {/* <FaGithub /> */}
+                        <FaGithub />
                     </a>
-                    {/* <Tooltip>Github</Tooltip> */}
+                    
+                    
                 </Github>
                 
                 <Frontend>
-                    <SiFrontendmentor />
-                    <a href='https://www.frontendmentor.io/profile/IkeoluwaAshade' target='_blank' rel="noopener noreferrer">    
+                    
+                    <a href='https://www.frontendmentor.io/profile/IkeoluwaAshade' target='_blank' rel="noopener noreferrer"><SiFrontendmentor />    
                     </a>
-                    {/* <Tooltip>Frontend Mentor</Tooltip> */}
+                   
                 </Frontend>
 
                 <LinkedIn>
-                    <GrLinkedin  />
-                    <a href='https://www.linkedin.com/in/ikeoluwaashade' target='_blank' rel="noopener noreferrer">
+                    
+                    <a href='https://www.linkedin.com/in/ikeoluwaashade' target='_blank' rel="noopener noreferrer"><GrLinkedin  />
                     </a>
-                    {/* <Tooltip>LinkedIn</Tooltip> */}
+                   
                 </LinkedIn>
 
                 {/* <DarkMode onClick={toggleTheme}>
@@ -95,7 +106,11 @@ const Wrapper = styled.div`
     flex-direction: column;
 `
 
-const NavDiv = styled.div``
+const NavDiv = styled.div`
+`
+const StyledLink = styled(Link)`
+    text-decoration: none;
+`
 const Navs = styled.div`
     margin: 25px 0;
     color: #fff;

@@ -52,48 +52,48 @@ const Header = () => {
 
                     <NavDiv /* isOpen={isMenuOpen} */ >
 
-                        <Link to='/'>
+                        <StyleLink to='/'>
                             <Nav>
                                 <FaBookOpen color='white' />
                                 <span>Home</span>
                             </Nav>
-                        </Link>
+                        </StyleLink>
 
-                        <Link to='project'>
+                        <StyleLink to='project'>
                             <Nav>
                                 <VscProject color='white' />
                                 <span>Projects</span>
                             </Nav>
-                        </Link>
+                        </StyleLink>
 
-                        <Link to='blog'> 
+                        <StyleLink to='blog'> 
                             <Nav>
                                 <FaBlogger color='white' />
                                 <span>Blog</span>
                             </Nav>
-                        </Link>
+                        </StyleLink>
 
-                        <Link to='photography'>
+                        <StyleLink to='photography'>
                             <Nav>
                                 <MdNoPhotography color='white' />
                                 <span>Photography</span>
                             </Nav>
-                        </Link>
+                        </StyleLink>
                     </NavDiv>
 
                     <Socials /* isOpen={isMenuOpen} */>
                         <IconContainer>
                             <Github>
-                                <FaGithub />
-                                <a href='https://github.com/IkeoluwaAshade' target='_blank' rel="noopener noreferrer"></a>
+                                
+                                <a href='https://github.com/IkeoluwaAshade' target='_blank' rel="noopener noreferrer"><FaGithub /></a>
                                 <Tooltip>Github</Tooltip>
                             </Github>
                         </IconContainer>
 
                         <IconContainer>
                             <Frontend>
-                                <SiFrontendmentor />
-                                <a href='https://www.frontendmentor.io/profile/IkeoluwaAshade' target='_blank' rel="noopener noreferrer">
+                                
+                                <a href='https://www.frontendmentor.io/profile/IkeoluwaAshade' target='_blank' rel="noopener noreferrer"><SiFrontendmentor />
                                 </a>
                                 
                                 <Tooltip>Frontend Mentor</Tooltip>
@@ -102,8 +102,8 @@ const Header = () => {
 
                         <IconContainer>
                             <LinkedIn>
-                                <GrLinkedin />
-                                <a href='https://www.linkedin.com/in/ikeoluwaashade' target='_blank' rel="noopener noreferrer">
+                                
+                                <a href='https://www.linkedin.com/in/ikeoluwaashade' target='_blank' rel="noopener noreferrer"><GrLinkedin />
                                 </a>
                                 <Tooltip>LinkedIn</Tooltip>
                             </LinkedIn>
@@ -180,6 +180,10 @@ const NavDiv = styled.div`
         display: ${(props) => (props.isOpen ? 'flex' : 'none')};
     }
 `;
+
+const StyleLink = styled(Link)`
+    text-decoration: none;
+`
 
 const Nav = styled.nav`
     width: 100%;
@@ -333,18 +337,12 @@ const DarkMode = styled.div`
     cursor: pointer;
 `;
 
-// const MenuIcon = styled.div`
-//   display: none;
-//   cursor: pointer;
 
-//   @media (max-width: 768px) {
-//     display: flex;
-//   }
-// `;
 
 const Side = styled.div`
     display: none;
     @media (max-width: 768px) {
         display: block;
+        cursor: pointer;
     }
 `
