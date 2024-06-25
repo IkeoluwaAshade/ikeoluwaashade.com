@@ -20,6 +20,8 @@ import { lightTheme, darkTheme } from '../block/Themes/themes';
 import { FiMenu, FiX } from 'react-icons/fi';
 import SideBar from './SideBar';
 
+import { Link } from 'react-router-dom';
+
 
 
 const Header = () => {
@@ -49,20 +51,34 @@ const Header = () => {
                     </MenuIcon> */}
 
                     <NavDiv /* isOpen={isMenuOpen} */ >
-                        <Nav>
-                            <VscProject />
-                            <a href="#" target='_blank' rel="noopener noreferrer">Projects</a>
-                        </Nav>
 
-                        <Nav>
-                            <FaBlogger />
-                            <a href="https://ikeoluwaashade.blogspot.com/" target='_blank' rel="noopener noreferrer">Blog</a>
-                        </Nav>
+                        <Link to='/'>
+                            <Nav>
+                                <FaBookOpen color='white' />
+                                <span>Home</span>
+                            </Nav>
+                        </Link>
 
-                        <Nav>
-                            <MdNoPhotography />
-                            <a href="#" target='_blank' rel="noopener noreferrer">Photography</a>
-                        </Nav>
+                        <Link to='project'>
+                            <Nav>
+                                <VscProject color='white' />
+                                <span>Projects</span>
+                            </Nav>
+                        </Link>
+
+                        <Link to='blog'> 
+                            <Nav>
+                                <FaBlogger color='white' />
+                                <span>Blog</span>
+                            </Nav>
+                        </Link>
+
+                        <Link to='photography'>
+                            <Nav>
+                                <MdNoPhotography color='white' />
+                                <span>Photography</span>
+                            </Nav>
+                        </Link>
                     </NavDiv>
 
                     <Socials /* isOpen={isMenuOpen} */>
@@ -145,7 +161,7 @@ const Logo = styled.h1`
 
 const NavDiv = styled.div`
     color: ${({ theme }) => theme.text};
-    min-width: 350px;
+    min-width: 520px;
     height: 40px;
     font-weight: 500;
     display: flex;
@@ -172,7 +188,7 @@ const Nav = styled.nav`
     align-items: center;
     transition: all 350ms;
 
-    a {
+    span {
         color: ${({ theme }) => theme.text};
         text-decoration: none;
         margin-left: 10px;

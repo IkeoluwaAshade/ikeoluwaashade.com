@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import SingleProject from '../../components/block/SingleProject'
 import Dp from '../../assets/Dp.jpg'
-// import { Container } from 'react-bootstrap'
 
 const Project = () => {
 

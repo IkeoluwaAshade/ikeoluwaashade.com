@@ -1,9 +1,37 @@
 import React from 'react'
+import styled from 'styled-components'
 
 const Photography = () => {
   return (
-    <div>Photography</div>
+    <Container>
+      <Wrapper>
+        <h1>Coming soon</h1>
+      </Wrapper>
+    </Container>
   )
 }
 
 export default Photography
+
+const Container = styled.div`
+  background-color: gray;
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+const Wrapper = styled.div` 
+  /* background-color: red; */
+  width: 85%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 70px;
+  }
+`

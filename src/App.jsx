@@ -1,7 +1,6 @@
 import React from 'react'
-import LandingPage from './pages/Home/LandingPage'
-import Blog from './pages/Blog/Blog';
-import Project from './pages/Projects/Project';
+import { RouterProvider } from 'react-router-dom';
+import { mainRoute } from './Router/Router';
 
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -10,9 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 const App = () => {
   return (
     <div>
-        <LandingPage />
-        {/* <Blog /> */}
-        {/* <Project /> */}
+        <RouterProvider router={mainRoute} /> 
     </div>
   )
 }
