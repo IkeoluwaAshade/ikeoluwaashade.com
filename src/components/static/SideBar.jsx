@@ -54,7 +54,6 @@ const SideBar = ({toggle, setToggle}) => {
                         <FaGithub />
                     </a>
                     
-                    
                 </Github>
                 
                 <Frontend>

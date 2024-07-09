@@ -23,9 +23,9 @@ const Home = () => {
     <ThemeProvider theme={themeMode}>
         <GlobalStyles />
         <HeroSection />
-        <TechnologySection />
-        <EndorsementSection />
-        <FooterSection />
+        {/* <TechnologySection /> */}
+        {/* <EndorsementSection /> */}
+        {/* <FooterSection /> */}
     </ThemeProvider>
   )
 }

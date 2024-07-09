@@ -2,6 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import SingleProject from '../../components/block/SingleProject'
 import Dp from '../../assets/Dp.jpg'
+import remoteWork from '../../assets/remoteWork.jpg'
+import SunnySide from '../../assets/sunnyside.jpg'
+import signup from '../../assets/signup.jpg'
+import nft from '../../assets/nft.jpg'
 
 const Project = () => {
 
@@ -13,41 +17,49 @@ const Project = () => {
         <ProjectContainer>
           <ProjectBox>
             <SingleProject
-              projectImage = {Dp}
+              projectImage = {SunnySide}
 
-              projectTitle = "NFT"
+              projectTitle = "Agency Landing Page"
 
-              description = "lorem ipsum ade ght skgdfalk hfsmc Noting serious. Ikeoluwa you are going places. The sky is just the starting point. The will break records, you will do everything with ease. Success is yours"
+              description = "This challenge was a perfect test for layout and responsive skills. There's atiny bit of Js for the mobile menu, but the focus was html and css"
 
               language1 = "html"
 
-              language2 = "java"
+              language2 = "css"
 
-              language3 = "python"
+              language3 = ""
 
-              language4 = "php"
+              language4 = ""
+
+              code = "https://iridescent-palmier-589d58.netlify.app/"
+
+              source = "https://iridescent-palmier-589d58.netlify.app/"
 
             />
 
             <SingleProject
-              projectImage = {Dp}
+              projectImage = {signup}
 
-              projectTitle = "NFT"
+              projectTitle = "Sign Up Form"
 
-              description = "lorem ipsum ade ght skgdfalk hfsmc Noting serious. Ikeoluwa you are going places. The sky is just the starting point. The will break records, you will do everything with ease. Success is yours"
+              description = "This Project tested my ability to create dropdown navigation menus,  common pattern on larger sites. It also provided some nice basic layout challenges."
 
               language1 = "html"
 
-              language2 = "java"
+              language2 = "css"
 
-              language3 = "python"
+              language3 = ""
 
-              language4 = "php"
+              language4 = ""
+
+              code = "https://github.com/IkeoluwaAshade/sign-up-form"
+
+              source = "https://iridescent-palmier-589d58.netlify.app/"
 
             />
 
             <SingleProject
-              projectImage = {Dp}
+              projectImage = {nft}
 
               projectTitle = "NFT"
 
@@ -55,17 +67,21 @@ const Project = () => {
 
               language1 = "html"
 
-              language2 = "java"
+              language2 = "css"
 
               language3 = "python"
 
               language4 = "php"
+
+              code = ""
+
+              source = ""
 
             />
-            {/* <SingleProject
-              projectImage = {Dp}
+            <SingleProject
+              projectImage = {remoteWork}
 
-              projectTitle = "NFT"
+              projectTitle = "Remote Work"
 
               description = "lorem ipsum ade ght skgdfalk hfsmc Noting serious. Ikeoluwa you are going places. The sky is just the starting point. The will break records, you will do everything with ease. Success is yours"
 
@@ -77,7 +93,11 @@ const Project = () => {
 
               language4 = "php"
 
-            /> */}
+              code = "https://github.com/IkeoluwaAshade/remote-work"
+
+              source = "https://famous-cendol-b805b9.netlify.app/"
+
+            />
           </ProjectBox>
         </ProjectContainer>
 
@@ -108,7 +128,7 @@ const ProjectContainer = styled.div``
 const ProjectBox = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 70px;
+  gap: 80px;
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;

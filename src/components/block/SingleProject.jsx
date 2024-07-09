@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const SingleProject = ({projectImage, projectTitle, description, language1, language2, language3, language4}) => {
+const SingleProject = ({projectImage, projectTitle, description, language1, language2, language3, language4, code, source}) => {
   return (
     <ProjectContainer>
       <Wrapper>
@@ -26,8 +26,8 @@ const SingleProject = ({projectImage, projectTitle, description, language1, lang
         </Stack>
 
         <Clicks>
-          <button>Code</button>
-          <button>Source</button>
+          {code && <a href = {code}><button>Code</button></a> }
+          {code && <a href = {source}><button>Live Link</button></a> }
         </Clicks>
       </Wrapper>
     </ProjectContainer>
@@ -39,7 +39,7 @@ export default SingleProject
 const ProjectContainer = styled.div`
   /* background-color: red; */
   color: #070F2B;
-  width: 376px;
+  width: 300px;
   margin-bottom: 20px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
@@ -104,6 +104,7 @@ const Clicks = styled.div`
     background-color: #123456;
     color: #fff;
     width: 71px;
+    height: 35px;
     padding: 5px;
     border-radius: 7px;
   }

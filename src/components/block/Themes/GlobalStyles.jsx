@@ -5,5 +5,7 @@ export const GlobalStyles = createGlobalStyle`
     background-color: ${(props) => props.theme.body};
     color: ${(props) => props.theme.text};
     transition: all 0.25s linear;
+
+    
   }
 `;

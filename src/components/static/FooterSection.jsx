@@ -32,8 +32,8 @@ const Container = styled.footer`
     justify-content: center;
     
     margin-bottom: 0;
-    position: absolute;
-    
+    bottom: 0;
+    position: fixed;
 `
 
 const Wrapper = styled.div`
