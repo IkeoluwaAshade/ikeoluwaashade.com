@@ -16,7 +16,7 @@ const Project = () => {
 
         <ProjectContainer>
           <ProjectBox>
-            <SingleProject
+            {/* <SingleProject
               projectImage = {SunnySide}
 
               projectTitle = "Agency Landing Page"
@@ -35,7 +35,7 @@ const Project = () => {
 
               source = "https://iridescent-palmier-589d58.netlify.app/"
 
-            />
+            /> */}
 
             <SingleProject
               projectImage = {signup}
@@ -58,7 +58,7 @@ const Project = () => {
 
             />
 
-            <SingleProject
+            {/* <SingleProject
               projectImage = {nft}
 
               projectTitle = "NFT"
@@ -77,7 +77,8 @@ const Project = () => {
 
               source = ""
 
-            />
+            /> */}
+
             <SingleProject
               projectImage = {remoteWork}
 
