@@ -37,11 +37,11 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 20px;
 
 
     @media (max-width: 768px) {
-        margin-top: 270px;
+        margin-top: 230px;
         margin-bottom: 200px;
     }
 `;

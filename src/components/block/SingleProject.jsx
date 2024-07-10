@@ -27,7 +27,7 @@ const SingleProject = ({projectImage, projectTitle, description, language1, lang
 
         <Clicks>
           {code && <a href = {code}><button>Code</button></a> }
-          {code && <a href = {source}><button>Live Link</button></a> }
+          {source && <a href = {source}><button>Live Link</button></a> }
         </Clicks>
       </Wrapper>
     </ProjectContainer>
@@ -75,6 +75,7 @@ const ProjectDescription = styled.p`
 const Stack = styled.div`
   text-align: center;
   margin-bottom: 18px;
+
   h4 {
 
   }

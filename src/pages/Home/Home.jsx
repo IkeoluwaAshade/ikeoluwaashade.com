@@ -23,9 +23,8 @@ const Home = () => {
     <ThemeProvider theme={themeMode}>
         <GlobalStyles />
         <HeroSection />
-        {/* <TechnologySection /> */}
+        <TechnologySection />
         {/* <EndorsementSection /> */}
-        {/* <FooterSection /> */}
     </ThemeProvider>
   )
 }
