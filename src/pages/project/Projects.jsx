@@ -59,7 +59,7 @@ const Project = () => {
                     <SingleProject
                         projectImage = {nft}
 
-                        projectTitle = "NFT"
+                        projectTitle = "Kuda"
 
                         description = "This Project tested my ability to create dropdown navigation menus,  common pattern on larger sites. It also provided some nice basic layout challenges."
 
@@ -67,20 +67,20 @@ const Project = () => {
 
                         language2 = "css"
 
-                        language3 = "python"
+                        language3 = "react"
 
-                        language4 = "php"
+                        language4 = ""
 
-                        code = "https://github.com/IkeoluwaAshade/sign-up-form"
+                        code = "https://github.com/IkeoluwaAshade/Kuda-App"
 
-                        source = "https://iridescent-palmier-589d58.netlify.app/"
+                        source = "https://kuda-app-beta.vercel.app/"
 
                     />
 
                     <SingleProject
                         projectImage = {remoteWork}
 
-                        projectTitle = "Sign Up Form"
+                        projectTitle = "Huddle landing page"
 
                         description = "This Project tested my ability to create dropdown navigation menus,  common pattern on larger sites. It also provided some nice basic layout challenges."
 
@@ -88,13 +88,13 @@ const Project = () => {
 
                         language2 = "css"
 
-                        language3 = ""
+                        language3 = "react"
 
                         language4 = ""
 
-                        code = "https://github.com/IkeoluwaAshade/sign-up-form"
+                        code = "https://github.com/IkeoluwaAshade/Huddle-Landing-Page"
 
-                        source = "https://iridescent-palmier-589d58.netlify.app/"
+                        source = "https://huddle-landing-page-lemon.vercel.app/"
 
                     />
                 </ProjectBox>
