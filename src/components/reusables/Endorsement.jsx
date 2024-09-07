@@ -1,4 +1,5 @@
-
+import React from 'react';
+import styled from 'styled-components';
 
 const Endorsement = ({ image, text, name, qualifications }) => {
   return (
@@ -14,9 +15,6 @@ const Endorsement = ({ image, text, name, qualifications }) => {
 };
 
 export default Endorsement;
-
-import React from 'react';
-import styled from 'styled-components';
 
 const EndorsementCard = styled.div`
   display: flex;

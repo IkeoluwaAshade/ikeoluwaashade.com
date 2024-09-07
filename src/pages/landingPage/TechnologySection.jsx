@@ -11,6 +11,10 @@ const TechnologySection = () => {
             <Cards>
                 <CardBox>
                     <Card 
+                        CardTitle='html' 
+                    />
+
+                    <Card 
                         CardTitle='CSS' 
                     />
 
@@ -27,20 +31,16 @@ const TechnologySection = () => {
                     />
 
                     <Card 
-                        CardTitle='' 
+                        CardTitle='Styled components' 
                     />
 
                     <Card 
-                        CardTitle='' 
+                        CardTitle='Axios' 
                     />
 
-                    <Card 
+                    {/* <Card 
                         CardTitle='' 
-                    />
-
-                    <Card 
-                        CardTitle='' 
-                    />
+                    /> */}
                 </CardBox>
             </Cards>
         </Wrapper>

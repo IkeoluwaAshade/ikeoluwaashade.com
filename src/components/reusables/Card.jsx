@@ -5,7 +5,7 @@ const Card = (props) => {
   return (
     <Container>
         <Wrapper>
-            <h4>{props.CardTitle}</h4>
+          <h4>{props.CardTitle}</h4>
         </Wrapper>
     </Container>
   )
@@ -22,6 +22,7 @@ const Container = styled.div`
 
 const Wrapper = styled.div`
     width: 85%;
+    flex-wrap: wrap;
     display: flex;
     justify-content: center;
     align-items: center;
