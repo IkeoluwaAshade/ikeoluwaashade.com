@@ -30,16 +30,16 @@ const TechnologySection = () => {
                         CardTitle='Git' 
                     />
 
-                    <Card 
+                    {/* <Card 
                         CardTitle='Styled components' 
-                    />
+                    /> */}
 
                     <Card 
                         CardTitle='Axios' 
                     />
 
                     {/* <Card 
-                        CardTitle='' 
+                        CardTitle='tailwind' 
                     /> */}
                 </CardBox>
             </Cards>
