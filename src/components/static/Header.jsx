@@ -37,10 +37,10 @@ const Header = () => {
               <FaBlogger />
               <StyledLink to='/blog'><span>Blog</span></StyledLink>
             </Nav>
-            <Nav>
+            {/* <Nav>
               <MdNoPhotography />
               <StyledLink to='/photography'><span>Photography</span></StyledLink>
-            </Nav>
+            </Nav> */}
           </NavDiv>
           <Socials>
             <IconContainer>

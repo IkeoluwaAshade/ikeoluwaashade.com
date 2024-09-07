@@ -12,7 +12,7 @@ export const mainRoute = createBrowserRouter([
       { path: '/', element: <Home /> },
       { path: '/project', element: <Project /> },
       { path: '/blog', element: <Blog /> },
-      { path: '/photography', element: <Photography /> },
+      // { path: '/photography', element: <Photography /> },
     ],
   },
 ]);

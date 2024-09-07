@@ -33,9 +33,9 @@ const SideBar = () => {
                     <span><StyledLink to='/blog'>Blog</StyledLink></span>
                 </Navs>
 
-                <Navs onClick={() => {setToggle(false)}}>
+                {/* <Navs onClick={() => {setToggle(false)}}>
                 <span><StyledLink to='/photography'>Photography</StyledLink></span>
-                </Navs>
+                </Navs> */}
                 
             </NavDiv>
 
