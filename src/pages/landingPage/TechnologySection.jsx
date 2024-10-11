@@ -52,17 +52,17 @@ export default TechnologySection
 
 const Container = styled.div`
     width: 100%;
-    margin-top: 6em;
+    margin-top: 4em;
     display: flex;
     justify-content: center;
     align-items: center;
 
     @media (max-width: 768px) {
-        margin-top: 16em;
+        margin-top: 8em;
     }
 
     @media (max-width: 500px) {
-        margin-top: 20em;
+        margin-top: 8em;
     }
 `
 

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import Endorsement from '../../components/reusables/Endorsement';
 import funmi from '../../assets/Funmi.jpg'
-import myDp from '../../assets/Dp.jpg'
+// import myDp from '../../assets/Dp.jpg'
 import samuel from '../../assets/samuelOlorunda.jpeg'
 
 
@@ -18,17 +18,17 @@ const endorsementsData = [
     
     { 
       image: samuel, 
-      text: "It has been a pleasure to mentor and watch Ikeoluwa grow into a skilled and passionate developer. His commitment to learning and his ability to tackle complex challenges with innovative solutions have consistently impressed me. Ikeoluwa's work ethic, combined with his natural talent for coding and problem-solving, sets him apart as a rising star in the tech industry. I have no doubt that he will continue to excel and make significant contributions to any team or project he is part of", 
+      text: "It has been a pleasure to mentor and watch Ikeoluwa grow into a skilled and passionate developer.", 
       name: "Samuel Olorunda", 
       qualifications: "Software Engineer" 
     },
     
-    { 
-      image: myDp, 
-      text: "Highly recommended for web development!", 
-      name: "Sarah Lee", 
-      qualifications: "BSc, MEng" 
-    }
+    // { 
+    //   image: myDp, 
+    //   text: "Highly recommended for web development!", 
+    //   name: "Sarah Lee", 
+    //   qualifications: "BSc, MEng" 
+    // }
 ];
 
 const EndorsementSection = () => {

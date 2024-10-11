@@ -12,7 +12,7 @@ const SingleBlog = ({blogImage, blogTitle, blogDescription, readMore}) => {
             <BlogDescription>{blogDescription}</BlogDescription>
 
             <Clicks>
-                {readMore && <a href = {readMore}><button>Read more..</button></a>}
+                {readMore && <a href = {readMore} target='_blank' rel='noopener noreferrer'><button>Read more..</button></a>}
             </Clicks>
         </Wrapper>
     </Container>

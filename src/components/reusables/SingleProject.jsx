@@ -26,8 +26,8 @@ const SingleProject = ({projectImage, projectTitle, description, language1, lang
             </Stack>
 
             <Clicks>
-                {code && <a href = {code}><button>Code</button></a>}
-                {code && <a href = {source}><button>Live Link</button></a>}
+                {code && <a href = {code} target='_blank' rel='noopener noreferrer'><button>Code</button></a>}
+                {code && <a href = {source} target='_blank' rel='noopener noreferrer'><button>Live Link</button></a>}
             </Clicks>
         </Wrapper>
     </ProjectContainer>

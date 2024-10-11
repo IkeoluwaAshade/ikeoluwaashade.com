@@ -16,11 +16,7 @@ const HeroSection = () => {
                     <AboutMeText>
                         Ikeoluwa is a promising and business oriented individual who is very passionate about growth and technology.
 
-                        He is a front-end developer with a strong foundation in web development. My journey in tech began with a deep curiosity for creating interactive and visually appealing websites. 
-
-                        He takes pride in crafting responsive and accessible web applications, ensuring that they look great on all devices. From designing elegant user interfaces to implementing dynamic features with dark mode toggle and seamless page routing, He strive to deliver a polished user experience.
-
-                        He is particularly drawn to solving real-world problems through code, whether it's building a personal projet or collaborating on a larger team. His goal is to continually expand his expertise, with an eye towards full-stack development, where He can bring even more ideas to life.
+                        Are you Looking for a fast, secure, and visually appealing websites? Then look no further.
 
                         He is also a visual communicator who likes to tells stories by capturing moment.
 
@@ -46,7 +42,7 @@ const Container = styled.div`
     }
 
     @media (max-width: 500px) {
-        margin-top: 26em;
+        margin-top: 15em;
     }
 `
 
