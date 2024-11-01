@@ -46,6 +46,7 @@ const Wrapper = styled.div`
 
 const BlogImage = styled.img`
     width: 300px;
+    height: 200px;
 `
 
 const BlogTitle = styled.h4`
@@ -54,7 +55,8 @@ const BlogTitle = styled.h4`
 
 const BlogDescription = styled.p`
     text-align: justify;
-    margin-bottom: 15px;
+    margin-top: 0;
+    margin-bottom: 18px;
 `
 
 const Clicks = styled.div`

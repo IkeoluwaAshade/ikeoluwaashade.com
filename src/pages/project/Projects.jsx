@@ -3,10 +3,8 @@ import styled from 'styled-components'
 import SingleProject from '../../components/reusables/SingleProject'
 import carRental from '../../assets/car-rental.png'
 import remoteWork from '../../assets/remoteWork.jpg'
-import sunnySide from '../../assets/sunnySide.jpg'
 import signup from '../../assets/signup.jpg'
 import huddle from '../../assets/huddle.jpg'
-import kuda from '../../assets/kuda.png'
 
 const Project = () => {
   return (

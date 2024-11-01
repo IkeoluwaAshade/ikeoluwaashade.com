@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import SingleBlog from '../../components/reusables/SingleBlog'
+import AI from '../../assets/AI.jpeg'
 import openSource from '../../assets/openSource.jpg'
 import get from '../../assets/get.jpg'
 import hookForm from '../../assets/hookForm.png'
@@ -20,11 +21,23 @@ const Blog = () => {
 
             <SingleBlog 
 
+              blogImage = {AI}
+
+              blogTitle = "Embracing the power of Artificial Intelligent"
+
+              blogDescription = "It is no doubt that we are all beneficiaries of Artificial Intelligence (AI). As a sofware..."
+
+              readMore = "https://medium.com/@IkeoluwaAshade/clicking-button-to-toggle-a-boolean-state-8257b70fb293"
+  
+            />
+
+            <SingleBlog 
+
               blogImage = {toggle}
 
               blogTitle = "Clicking button to toggle a Boolean state"
 
-              blogDescription = "Lorem ipsum dolor sit amet, consectetur adispiscing elit, sed do eiusmod tempor incididut ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi utj aliquip ex ea commodo consequat."
+              blogDescription = "Very quickly we are going to be looking at a code snippet from a React component that toggles a Bool..."
 
               readMore = "https://medium.com/@IkeoluwaAshade/clicking-button-to-toggle-a-boolean-state-8257b70fb293"
   
@@ -36,7 +49,7 @@ const Blog = () => {
 
               blogTitle = "Making http GET request with React using Axios"
 
-              blogDescription = "Lorem ipsum dolor sit amet, consectetur adispiscing elit, sed do eiusmod tempor incididut ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi utj aliquip ex ea commodo consequat."
+              blogDescription = "Fetching an API from an external source is an integral part of web development. That is why a good u..."
 
               readMore = "https://medium.com/@IkeoluwaAshade/making-http-get-request-with-react-using-axios-a3a04dff564a"
   
@@ -48,7 +61,7 @@ const Blog = () => {
 
               blogTitle = "React Hook Form"
 
-              blogDescription = "Lorem ipsum dolor sit amet, consectetur adispiscing elit, sed do eiusmod tempor incididut ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi utj aliquip ex ea commodo consequat."
+              blogDescription = "I'd an issue implementing email input valiation while on a project. After a thorough search on how to go about it, I came up with a solution by Yogesh..."
 
               readMore = "https://ikeoluwaashade.blogspot.com/2023/03/react-hook-form.html"
   
@@ -60,7 +73,7 @@ const Blog = () => {
 
               blogTitle = "Git Vs Github"
 
-              blogDescription = "Lorem ipsum dolor sit amet, consectetur adispiscing elit, sed do eiusmod tempor incididut ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi utj aliquip ex ea commodo consequat."
+              blogDescription = "You do not need Github to use git, but you cannot use GitHub without git. It sounds confusing right?? Let's..."
 
               readMore = "https://ikeoluwaashade.blogspot.com/2022/09/git-vs-github.html"
   
@@ -72,7 +85,7 @@ const Blog = () => {
 
               blogTitle = "Frontend Web Developer roadmap"
 
-              blogDescription = "Lorem ipsum dolor sit amet, consectetur adispiscing elit, sed do eiusmod tempor incididut ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi utj aliquip ex ea commodo consequat."
+              blogDescription = "Have you been stuck or confused about the orderly pattern of how yo..."
 
               readMore = "https://ikeoluwaashade.blogspot.com/2022/09/frontend-web-developer-roadmap.html"
   
@@ -84,7 +97,7 @@ const Blog = () => {
 
               blogTitle = "Open Source"
 
-              blogDescription = "Lorem ipsum dolor sit amet, consectetur adispiscing elit, sed do eiusmod tempor incididut ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi utj aliquip ex ea commodo consequat."
+              blogDescription = "Everyone using the internet today is a beneficiary of an open source. What exactly is an open source? An open source..."
 
               readMore = "https://ikeoluwaashade.blogspot.com/2022/09/open-source.html?m=1"
   
