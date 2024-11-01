@@ -27,7 +27,7 @@ const Blog = () => {
 
               blogDescription = "It is no doubt that we are all beneficiaries of Artificial Intelligence (AI). As a sofware..."
 
-              readMore = "https://medium.com/@IkeoluwaAshade/clicking-button-to-toggle-a-boolean-state-8257b70fb293"
+              readMore = "https://medium.com/@IkeoluwaAshade/embracing-the-power-of-artificial-intelligence-fc9573da343c"
   
             />
 
