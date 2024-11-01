@@ -1,10 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 import SingleProject from '../../components/reusables/SingleProject'
+import carRental from '../../assets/car-rental.png'
 import remoteWork from '../../assets/remoteWork.jpg'
 import sunnySide from '../../assets/sunnySide.jpg'
 import signup from '../../assets/signup.jpg'
-import nft from '../../assets/nft.jpg'
+import huddle from '../../assets/huddle.jpg'
+import kuda from '../../assets/kuda.png'
 
 const Project = () => {
   return (
@@ -15,11 +17,31 @@ const Project = () => {
             <ProjectContainer>
                 <ProjectBox>
                     <SingleProject
+                        projectImage = {carRental}
+
+                        projectTitle = "Car Rental"
+
+                        description = "I collaborated on Car Rental project which exposed me to a lot of experience I worked on the Contact and FAQ pages and also assisted in some other smaller components."
+
+                        language1 = "html"
+
+                        language2 = "tailwind"
+
+                        language3 = "react"
+
+                        language4 = ""
+
+                        code = "https://github.com/IkeoluwaAshade/car-rental"
+
+                        source = "https://car-rental-lmd.vercel.app/"
+
+                    />
+                    <SingleProject
                         projectImage = {signup}
 
                         projectTitle = "Sign Up Form"
 
-                        description = "This Project tested my ability to create dropdown navigation menus,  common pattern on larger sites. It also provided some nice basic layout challenges."
+                        description = "I practiced building a sign-up form with client-side validation using JavaScript, a common feature on many websites that ensures accurate and reliable user input."
 
                         language1 = "html"
 
@@ -40,7 +62,7 @@ const Project = () => {
 
                         projectTitle = "Remote Work"
 
-                        description = "lorem ipsum ade ght skgdfalk hfsmc Noting serious. Ikeoluwa you are going places. The sky is just the starting point. The will break records, you will do everything with ease. Success is yours."
+                        description = "This Project tested my ability to create dropdown navigation menus,  common pattern on larger sites. It also provided some nice basic layout challenges."
 
                         language1 = "html"
 
@@ -50,14 +72,14 @@ const Project = () => {
 
                         language4 = ""
 
-                        code = "https://github.com/IkeoluwaAshade/remote-work"
+                        code = "https://github.com/IkeoluwaAshade/car-rental"
 
-                        source = "https://famous-cendol-b805b9.netlify.app/"
+                        source = "https://car-rental-lmd.vercel.app/"
 
                     />
 
-                    <SingleProject
-                        projectImage = {nft}
+                    {/* <SingleProject
+                        projectImage = {kuda}
 
                         projectTitle = "Kuda"
 
@@ -75,14 +97,14 @@ const Project = () => {
 
                         source = "https://kuda-app-beta.vercel.app/"
 
-                    />
+                    /> */}
 
                     <SingleProject
-                        projectImage = {remoteWork}
+                        projectImage = {huddle}
 
                         projectTitle = "Huddle landing page"
 
-                        description = "This Project tested my ability to create dropdown navigation menus,  common pattern on larger sites. It also provided some nice basic layout challenges."
+                        description = "Tackling this challenge was exactly what I needed to sharpen my layout skills. Building out the structure from scratch gave me a boost of confidence and a clearer perspective on how to approach web page layouts. Excited for the next one!."
 
                         language1 = "html"
 
